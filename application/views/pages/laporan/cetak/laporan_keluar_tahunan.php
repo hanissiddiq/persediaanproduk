@@ -77,14 +77,14 @@
         <section>
             <div class="row">
 
-                <table class="table table-bordered" style="width:100%">
+                <table class="table table-bordered" style="width:95%">
                     <thead>
                         <tr>
                             <th>No</th>
                             <th>Kode Produk</th>
                             <th>Nama Produk</th>
                             <th>Harga</th>
-                            <th>Jumlah Keluar</th>
+                            <th>Jml Keluar</th>
                             <th>Tanggal Keluar</th>
                         </tr>
                     </thead>
@@ -92,11 +92,11 @@
                         <?php $n = 1;
                         foreach ($keluar as $laporan) { ?>
                             <tr>
-                                <td><?= $n; ?></td>
-                                <td><?= $laporan->kode_produk ?></td>
+                                <td width=3><?= $n; ?></td>
+                                <td width=4><?= $laporan->kode_produk ?></td>
                                 <td><?= $laporan->nama_produk ?></td>
                                 <td>Rp. <?= number_format($laporan->harga, 0, ".", ".") ?></td>
-                                <td><?= $laporan->jumlah ?></td>
+                                <td width=2><?= $laporan->jumlah ?></td>
                                 <td><?= $laporan->tanggal ?></td>
                             </tr>
                         <?php $n++;
