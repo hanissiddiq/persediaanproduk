@@ -95,7 +95,7 @@
                                 <td><?= $n; ?></td>
                                 <td><?= $laporan->kode_produk ?></td>
                                 <td><?= $laporan->nama_produk ?></td>
-                                <td>Rp. <?= number_format($laporan->harga), 0, ".", "." ?></td>
+                                <td>Rp. <?= number_format($laporan->harga, 0, ".", ".") ?></td>
                                 <td><?= $laporan->jumlah ?></td>
                                 <td><?= $laporan->tanggal ?></td>
                             </tr>
@@ -105,7 +105,7 @@
                 </table>
             </div>
             <div class="bwh" style="margin-top: 5px;">
-                <p><b>Kudus, <?php $hariIni = new DateTime();
+                <p><b>Bireuen, <?php $hariIni = new DateTime();
                                 echo $hariIni->format('d F Y'); ?></b></p>
             </div>
     </div>

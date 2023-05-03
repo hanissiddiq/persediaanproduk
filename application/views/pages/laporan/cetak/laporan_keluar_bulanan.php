@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-md-9 mt-5 text-dark">
                     <div class="text-kop">
-                        <h1 style="margin-bottom: -4;"><b>Laporan Keluar Tahunan</b></h1>
+                        <h1 style="margin-bottom: -4;"><b>Laporan Keluar Bulanan</b></h1>
                         <h2><b></b></h2>
                         <h5>Tahun <?= $tahun ?></h5>
                     </div>
@@ -77,14 +77,14 @@
         <section>
             <div class="row">
 
-                <table class="table table-bordered" style="width:100%">
+                <table class="table table-bordered" style="width:98%">
                     <thead>
                         <tr>
                             <th>No</th>
                             <th>Kode Produk</th>
                             <th>Nama Produk</th>
                             <th>Harga</th>
-                            <th>Jumlah keluar</th>
+                            <th>Jml keluar</th>
                             <th>Tanggal keluar</th>
                         </tr>
                     </thead>
@@ -92,11 +92,11 @@
                         <?php $n = 1;
                         foreach ($keluar as $laporan) { ?>
                             <tr>
-                                <td><?= $n; ?></td>
-                                <td><?= $laporan->kode_produk ?></td>
+                                <td width=3><?= $n; ?></td>
+                                <td width=4><?= $laporan->kode_produk ?></td>
                                 <td><?= $laporan->nama_produk ?></td>
-                                <td>Rp. <?= number_format($laporan->harga), 0, ".", "." ?></td>
-                                <td><?= $laporan->jumlah ?></td>
+                                <td>Rp. <?= number_format($laporan->harga, 0, ",", "." )?></td>
+                                <td width=2><?= $laporan->jumlah ?></td>
                                 <td><?= $laporan->tanggal ?></td>
                             </tr>
                         <?php $n++;
@@ -105,7 +105,7 @@
                 </table>
             </div>
             <div class="bwh" style="margin-top: 5px;">
-                <p><b>Kudus, <?php $hariIni = new DateTime();
+                <p><b>Bireuen, <?php $hariIni = new DateTime();
                                 echo $hariIni->format('d F Y'); ?></b></p>
             </div>
     </div>
