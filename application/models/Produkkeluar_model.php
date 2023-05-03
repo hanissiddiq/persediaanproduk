@@ -3,7 +3,8 @@ class Produkkeluar_model extends CI_Model
 {
     public function getProduk()
     {
-        $this->db->order_by('id_produk', 'DESC');
+        /* $this->db->order_by('id_produk', 'DESC'); */
+		$this->db->order_by('nama_produk', 'ASC');
         $this->db->where('stok !=', 0);
         return $this->db->get('produk')->result();
     }

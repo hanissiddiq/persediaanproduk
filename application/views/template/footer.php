@@ -24,6 +24,8 @@
  <script src="<?= base_url() ?>./assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
  <script src="<?= base_url() ?>./assets/modules/summernote/summernote-bs4.js"></script>
  <script src="<?= base_url() ?>./assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+ <!-- <script src="<?= base_url() ?>./assets/modules/select2/dist/js/select2.full.min.js"></script>-->
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
  <!-- Page Specific JS File -->
  <script src="<?= base_url() ?>./assets/js/page/index-0.js"></script>
@@ -109,8 +111,24 @@
  </script>
 
 
+ <!-- script select2 -->
+ <script>
+ $(document).ready(function() {
+    $('.select2').select2({
+		width:'100%'
+	});
+});
+</script>
 
+<!-- script deselect -->
+ <script>
+ /*  var select_box_element = document.querySelector("#dselect");
+
+    dselect(select_box_element, {
+        search: true
+    }); */
+</script>
 
  </body>
-
+<!-- by  hanis -->
  </html>

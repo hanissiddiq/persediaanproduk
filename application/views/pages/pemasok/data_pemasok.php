@@ -236,7 +236,7 @@
                                               </div>
                                               <div class="form-group">
                                                   <label for="a">Status Aktif</label>
-                                                  <select name="is_active" id="a" class="form-control">
+                                                  <select name="is_active_pemasok" id="a" class="form-control">
                                                       <option value="" selected disabled>-- PILIH STATUS AKTIF --</option>
                                                       <option value="1">Aktif</option>
                                                       <option value="0">Tidak Aktif</option>

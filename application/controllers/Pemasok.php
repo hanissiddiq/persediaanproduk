@@ -35,7 +35,7 @@ class Pemasok extends CI_Controller
         $this->form_validation->set_rules('nama_pemasok', 'Nama Pemasok', 'required');
         $this->form_validation->set_rules('alamat_pemasok', 'Alamat', 'required');
         $this->form_validation->set_rules('no_hp_pemasok', 'Nomor Hp', 'required');
-        $this->form_validation->set_rules('is_active', 'Status Aktif', 'required');
+        $this->form_validation->set_rules('is_active_pemasok', 'Status Aktif', 'required');
 
         if ($this->form_validation->run() == FALSE) {
             $this->index();

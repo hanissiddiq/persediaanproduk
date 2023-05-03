@@ -91,7 +91,7 @@
 
 
           <!-- Modal Tambah -->
-          <div class="modal fade" id="tambahkeluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="tambahkeluar"  aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header bg-success">
@@ -101,13 +101,14 @@
                           </button>
                       </div>
                       <div class="modal-body">
-                          <div class="rpw">
+                          <div class="row">
                               <div class="col-lg-12">
                                   <form action="<?= base_url('tambah-produk-keluar') ?>" method="post" enctype="multipart/form-data">
                                       <div class="form-group">
                                           <label for="pk">Pilih Produk</label>
-                                          <select name="id_produk" id="pk" class="form-control">
-                                              <option value="" selected disabled>-- PILIH PRODUK --</option>
+                                          <select name="id_produk" id="pk" class="select2">
+                                              <!--<option value="" selected disabled>-- PILIH PRODUK --</option>-->
+											  <option value="">-- PILIH PRODUK --</option>
                                               <?php foreach ($produk as $pro) { ?>
                                                   <option value="<?= $pro->id_produk ?>"><?= $pro->nama_produk ?> | <?= $pro->kode_produk ?> | Stok <?= $pro->stok ?></option>
                                               <?php } ?>

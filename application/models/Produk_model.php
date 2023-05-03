@@ -20,7 +20,8 @@ class Produk_model extends CI_Model
 
     public function getProduk()
     {
-        $this->db->order_by('id_produk', 'DESC');
+         $this->db->order_by('id_produk', 'DESC');
+		//$this->db->order_by('nama_produk', 'ASC');
         $this->db->join('satuan', 'satuan.id_satuan=produk.id_satuan');
         $this->db->join('kategori', 'kategori.id_kategori=produk.id_kategori');
         return $this->db->get('produk')->result();

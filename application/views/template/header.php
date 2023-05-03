@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="<?= base_url() ?>./<?= base_url() ?>./assets/modules/weather-icon/css/weather-icons.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>./assets/modules/weather-icon/css/weather-icons-wind.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>./assets/modules/summernote/summernote-bs4.css">
+	<!--<link rel="stylesheet" href="<?= base_url() ?>./assets/modules/select2/dist/css/select2.min.css">-->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="<?= base_url() ?>./assets/modules/dselect.js"></script>
+	<link rel="stylesheet" href="<?= base_url() ?>./assets/modules/dselect.scss">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>./assets/css/style.css">

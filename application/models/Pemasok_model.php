@@ -13,7 +13,8 @@ class Pemasok_model extends CI_Model
 
     public function getProduk()
     {
-        $this->db->order_by('id_produk', 'DESC');
+        // $this->db->order_by('id_produk', 'DESC');
+		$this->db->order_by('nama_produk', 'ASC');
         return $this->db->get('produk')->result();
     }
 

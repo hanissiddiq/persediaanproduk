@@ -89,7 +89,7 @@
 
 
           <!-- Modal Tambah -->
-          <div class="modal fade" id="tambahmasuk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="tambahmasuk" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header bg-success">
@@ -104,7 +104,7 @@
                                   <form action="<?= base_url('tambah-produk-masuk') ?>" method="post" enctype="multipart/form-data">
                                       <div class="form-group">
                                           <label for="pk">Pilih Produk</label>
-                                          <select name="id_produk" id="pk" class="form-control">
+                                          <select name="id_produk" id="pk" class="select2">
                                               <option value="" selected disabled>-- PILIH PRODUK --</option>
                                               <?php foreach ($produk as $pro) { ?>
                                                   <option value="<?= $pro->id_produk ?>"><?= $pro->nama_produk ?> | <?= $pro->kode_produk ?> | Stok <?= $pro->stok ?></option>
