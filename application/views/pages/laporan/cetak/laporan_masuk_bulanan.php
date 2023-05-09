@@ -77,7 +77,7 @@
         <section>
             <div class="row">
 
-                <table class="table table-bordered" style="width:98%">
+                <table class="table table-bordered" style="width:95%">
                     <thead>
                         <tr>
                             <th>No</th>

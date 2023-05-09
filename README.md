@@ -5,6 +5,14 @@ Teknologi yang digunakan <br>
 --> `Php Version v7.4`<br>
 --> `Bootsrap version Bootstrap v4.1.3`
 
+Jalankan Menggunakan `Composer versi 2.5.5`
+
+Buka directory aplikasi Misalkan `https://localhost/persedianproduk/` itu artinya buka terminal di directory `C:\\xampp\htdocs\persediaanproduk`
+Load semua library dengan perintah `composer update` pada terminal yang telah dibuka dalam directory aplikasi.
+Load Library excel dengan perintah `composer require phpoffice/phpspreadsheet'
+library tersebut akan tersimpan di root path `vendor\phpoffice`
+
+
 database : `persediaan_produk v3.sql`
 
 `user : admin`<br>

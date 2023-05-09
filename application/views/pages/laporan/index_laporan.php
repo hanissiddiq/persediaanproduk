@@ -64,7 +64,18 @@
                                                           </div>
                                                       </div>
                                                       <div class="form-group">
-                                                          <button type="submit" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan</button>
+													  
+														<div class="row">
+														<div class="col-6">
+                                                          <button type="submit" name="pdf" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan Pdf</button>
+														</div>
+														<div class="col-6">
+														  <button type="submit" name="excel" formaction="<?= base_url('Laporan/excel_masuk_bulanan') ?>" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan Excel</button>
+														  </div>
+														</div>
+													  
+                                                          <!-- <button type="submit" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan</button>-->
+														  
                                                       </div>
                                                   </div>
                                               </div>
@@ -143,7 +154,14 @@
                                                           </div>
                                                       </div>
                                                       <div class="form-group">
-                                                          <button type="submit" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan</button>
+													  <div class="row">
+														<div class="col-6">
+                                                          <button type="submit" name="pdf" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan Pdf</button>
+														</div>
+														<div class="col-6">
+														  <button type="submit" name="excel" formaction="<?= base_url('Laporan/excel_keluar_bulanan') ?>" class="btn btn-block btn-warning"><i class="fas fa-download"></i> Cetak Laporan Excel</button>
+														  </div>
+														</div>
                                                       </div>
                                                   </div>
                                               </div>

@@ -69,7 +69,7 @@
                     <div class="text-kop">
                         <h1 style="margin-bottom: -4;"><b>Laporan Keluar Bulanan</b></h1>
                         <h2><b></b></h2>
-                        <h5>Tahun <?= $tahun ?></h5>
+                        <h5>Bulan <?= $bln ?> Tahun <?= $tahun ?></h5>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                                 <td width=3><?= $n; ?></td>
                                 <td width=4><?= $laporan->kode_produk ?></td>
                                 <td><?= $laporan->nama_produk ?></td>
-                                <td>Rp. <?= number_format($laporan->harga, 0, ",", "." )?></td>
+                                <td>Rp. <?= number_format($laporan->harga, 0, ".", ".") ?></td>
                                 <td width=2><?= $laporan->jumlah ?></td>
                                 <td><?= $laporan->tanggal ?></td>
                             </tr>

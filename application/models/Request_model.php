@@ -3,13 +3,13 @@ class Request_model extends CI_Model
 {
     public function getProduk()
     {
-        $this->db->order_by('id_produk', 'DESC');
+        $this->db->order_by('nama_produk', 'ASC');
         return $this->db->get('produk')->result();
     }
 
     public function getPemasok()
     {
-        $this->db->order_by('id_pemasok', 'DESC');
+        $this->db->order_by('nama_pemasok', 'ASC');
         $this->db->where('is_active_pemasok', '1');
         $this->db->join('produk', 'produk.id_produk=pemasok.id_produk');
         return $this->db->get('pemasok')->result();

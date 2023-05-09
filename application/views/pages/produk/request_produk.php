@@ -164,7 +164,7 @@
 
 
                                               <!-- Modal Edit-->
-                                              <div class="modal fade" id="edit<?= $r->id_request_produk ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal fade" id="edit<?= $r->id_request_produk ?>" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content">
                                                           <div class="modal-header bg-warning">
@@ -179,7 +179,7 @@
                                                                       <form action="<?= base_url('edit-request-produk/') . $r->id_request_produk ?>" method="post" enctype="multipart/form-data">
                                                                           <div class="form-group">
                                                                               <label for="">Data Produk</label>
-                                                                              <select name="id_produk" id="" class="form-control">
+                                                                              <select name="id_produk" id="" class="form-control select2">
                                                                                   <option value="" selected disabled>-- PILIH PRODUK --</option>
                                                                                   <?php foreach ($produk as $dp) { ?>
                                                                                       <option value="<?= $dp->id_produk ?>" <?= $dp->id_produk == $r->id_produk ? 'selected' : '' ?>><?= $dp->nama_produk ?> | <?= $dp->kode_produk ?></option>
@@ -187,8 +187,8 @@
                                                                               </select>
                                                                           </div>
                                                                           <div class="form-group">
-                                                                              <label for="">Data Produk</label>
-                                                                              <select name="id_pemasok" id="" class="form-control">
+                                                                              <label for="">Data Pemasok</label>
+                                                                              <select name="id_pemasok" id="" class="form-control select2">
                                                                                   <option value="" selected disabled>-- PILIH PEMASOK --</option>
                                                                                   <?php foreach ($pemasok as $pp) { ?>
                                                                                       <option value="<?= $pp->id_produk ?>" <?= $pp->id_produk == $r->id_produk ? 'selected' : '' ?>><?= $pp->nama_pemasok ?> | <?= $pp->nama_produk ?> - <?= $pp->kode_produk ?></option>
@@ -260,8 +260,8 @@
               </div>
           </div>
 
-          <!-- Modal -->
-          <div class="modal fade" id="tambah-data" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- Modal Tambah Data -->
+          <div class="modal fade" id="tambah-data"  aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header bg-success">
@@ -276,7 +276,7 @@
                                   <form action="<?= base_url('tambah-request-produk') ?>" method="post" enctype="multipart/form-data">
                                       <div class="form-group">
                                           <label for="">Data Produk</label>
-                                          <select name="id_produk" id="" class="form-control">
+                                          <select name="id_produk" id="" class="form-control select2">
                                               <option value="" selected disabled>-- PILIH PRODUK --</option>
                                               <?php foreach ($produk as $dp) { ?>
                                                   <option value="<?= $dp->id_produk ?>"><?= $dp->nama_produk ?> | <?= $dp->kode_produk ?></option>
@@ -284,8 +284,8 @@
                                           </select>
                                       </div>
                                       <div class="form-group">
-                                          <label for="">Data Produk</label>
-                                          <select name="id_pemasok" id="" class="form-control">
+                                          <label for="">Data Pemasok</label>
+                                          <select name="id_pemasok" id="" class="form-control select2">
                                               <option value="" selected disabled>-- PILIH PEMASOK --</option>
                                               <?php foreach ($pemasok as $pp) { ?>
                                                   <option value="<?= $pp->id_produk ?>"><?= $pp->nama_pemasok ?> | <?= $pp->nama_produk ?> - <?= $pp->kode_produk ?></option>
